@@ -1,0 +1,136 @@
+:root {
+    --bg-color-main: #1E202B;
+    --bg-second-color:#323544;
+}
+.bg-second{
+    background-color: var(--bg-second-color);
+}
+.bg-main {
+    background-color: var(--bg-color-main);
+}
+
+body {
+    background-color: var(--bg-color-main);
+}
+
+/* =================NavBar================== */
+.text-small {
+    font-size: 10px;
+}
+
+nav a {
+    font-size: 15px !important;
+    font-weight: 400 !important;
+    color: #fff !important;
+
+}
+
+.btn-nav {
+    border: 2px solid #09c;
+    background-color: transparent;
+    border-radius: 1000px;
+}
+
+.nav-link {
+    margin-left: 15px;
+
+}
+
+nav a:hover {
+    color: rgb(0, 121, 161) !important;
+    border: 2px solid #09c;
+    background-color: transparent;
+    border-radius: 1000px;
+}
+
+@media all and (max-width:992px) {
+    nav a {
+        color: rgb(255, 255, 255) !important;
+        border: none;
+    }
+
+    .nav-item {
+        border-bottom: 1px solid #555;
+        background-color: rgb(136, 134, 134) !important;
+        
+
+    }
+    .edit-small{
+        margin-top: 20px;
+    }
+    .btn-nav {
+        color: rgb(1, 105, 139) !important;
+
+        border: none;
+        background-color: transparent;
+        padding: 3px 30px 3px 30px !important;
+        border-radius: 0px;
+    }
+
+    nav a:hover {
+        color: rgb(0, 121, 161) !important;
+        border: none;
+        background-color: transparent;
+        border-radius: 0px;
+
+    }
+}
+
+/* ==========================main=============== */
+section {
+    background-image: url(../Images/banner.png);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: contain 100%;
+    /* height: 800px; */
+    margin-bottom: 60px;
+
+}
+#citySearch{
+    background-color: var(--bg-color-main) !important;
+}
+input::placeholder {
+    color: #928c8c !important;
+}
+
+.input-edit {
+    position: relative;
+}
+
+.input-edit button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translateY(10%);
+    height: 80%;
+    margin-right: 5px;
+    padding: 0px 40px 0px 40px;
+    background-color: #09c;
+    color: #fff;
+    border: none;
+}
+
+section .card .style h1{
+    font-size: 80px;
+    font-weight: 700;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.card{
+    height: 350px !important;
+}
+/* =======================Footer===================== */
+.col-lg-4 i{
+    font-size: 18px;
+width: 40px;
+height: 40px;
+color: #09c;
+background-color: var(--bg-color-main);
+border-radius: 50%;
+transition: background-color 0.5s,color 0.5s;
+cursor: pointer;
+}
+.col-lg-4 i:hover{
+    background-color: #09c;
+    color: #fff;
+}
